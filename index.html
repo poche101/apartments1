@@ -17,7 +17,10 @@
 <!-- Main Navigation -->
 <nav id="mainNav" class="fixed top-0 w-full z-[80] bg-white/80 backdrop-blur-md border-b border-stone-100 px-6 py-4 flex justify-between items-center">
     <div class="nav-logo flex items-center gap-3">
-        <img src="assets/images/logo.jpg" alt="Olivine" class="h-10 w-10 rounded-full border border-[#8DA358]/20" onerror="this.style.display='none'">
+        <img src="assets/images/logo.jpg" 
+     alt="Olivine" 
+     class="h-28 w-28 object-contain border border-[#8DA358]/20" 
+     onerror="this.style.display='none'">
         <span class="font-serif text-xl tracking-[0.2em] text-stone-900 uppercase"></span>
     </div>
 
@@ -33,29 +36,34 @@
     <button class="md:hidden flex flex-col gap-1.5 p-2 group" onclick="toggleMenu(true)">
         <span class="w-6 h-[1px] bg-stone-900 group-hover:bg-[#8DA358] transition-colors"></span>
         <span class="w-6 h-[1px] bg-stone-900 group-hover:bg-[#8DA358] transition-colors"></span>
+        <span class="w-6 h-[1px] bg-stone-900 group-hover:bg-[#8DA358] transition-colors"></span>
     </button>
 </nav>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobMenu" class="fixed inset-0 z-[100] translate-x-full transition-transform duration-500 ease-in-out bg-white flex flex-col p-8 overflow-hidden">
+<div id="mobMenu" class="fixed inset-0 z-[100] translate-x-full transition-transform duration-500 ease-in-out flex flex-col p-8 overflow-hidden" style="background-color: #ECEAE5;">
     
-    <!-- Sophisticated Watermark Background -->
-    <div class="absolute inset-0 z-0 opacity-[0.07] pointer-events-none select-none" 
+    <div class="absolute inset-0 z-0 opacity-[0.07] pointer-events-none" 
+         style="background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=30&w=1400') center/cover;">
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 h-[180px] pointer-events-none z-0"
+         style="background: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 1440 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 180L200 70L350 130L520 25L700 110L860 45L1000 120L1150 35L1300 100L1440 55V180H0Z' fill='rgba(210,206,198,0.55)'/%3E%3C/svg%3E&quot;) bottom/cover no-repeat;">
+    </div>
+
+    <div class="absolute inset-0 z-0 opacity-[0.04] pointer-events-none select-none" 
          style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22250%22 height=%22150%22><text x=%220%22 y=%2280%22 font-family=%22serif%22 font-size=%2216%22 fill=%22%238DA358%22 font-weight=%22bold%22 transform=%22rotate(-20)%22>OLIVINE APARTMENTS</text></svg>'); background-repeat: repeat;">
     </div>
 
-    <!-- Mobile Menu Header -->
     <div class="relative z-10 flex justify-between items-center mb-16">
         <div class="flex items-center gap-3">
-            <img src="assets/images/logo.jpg" alt="Olivine" class="h-10 w-10 rounded-full border border-[#8DA358]/20 shadow-sm">
-            <span class="text-stone-900 font-serif text-xl tracking-[0.2em] uppercase"></span>
+            <img src="assets/images/logo.jpg" alt="Olivine" class="h-10 w-15 border border-[#8DA358]/20 shadow-sm">
         </div>
-        <button onclick="toggleMenu(false)" class="w-10 h-10 flex items-center justify-center border border-stone-200 rounded-full text-stone-900 text-2xl hover:bg-stone-100 transition-colors">
+        <button onclick="toggleMenu(false)" class="w-10 h-10 flex items-center justify-center border border-stone-400 rounded-full text-stone-900 text-2xl hover:bg-stone-200 transition-colors">
             &times;
         </button>
     </div>
 
-    <!-- Navigation Links -->
     <div class="relative z-10 flex flex-col gap-6">
         <a href="#overview" onclick="toggleMenu(false)" class="mob-nav-item group">
             <div class="flex items-end gap-4 mb-2">
@@ -88,10 +96,9 @@
         </div>
     </div>
 
-    <!-- Footer for Mobile Menu -->
     <div class="mt-auto relative z-10 flex flex-col items-center gap-4">
-        <div class="w-12 h-[1px] bg-stone-200"></div>
-        <p class="text-stone-400 text-[9px] uppercase tracking-[0.5em] font-bold">2026 Estate Collection</p>
+        <div class="w-12 h-[1px] bg-stone-400/30"></div>
+        <p class="text-stone-500 text-[9px] uppercase tracking-[0.5em] font-bold">Olivine Apartments</p>
     </div>
 </div>
 
@@ -199,7 +206,7 @@
     <div class="inner">
       <div class="logo-badge reveal">
         <span class="l1">OLIVINE</span>
-        <span class="l2">WEST</span>
+        <span class="l2">APARTMENTS</span>
       </div>
       <p class="about-body reveal d1">
         Olivine Apartments by Landasset is a beacon of modern sophistication, designed to redefine luxury living in Port Harcourt. With a unique architectural profile that blends sleek lines with bold design, it stands as a tribute to innovative urban living. This development is not just a residence — it's a work of art.
@@ -228,8 +235,16 @@
           <img src="assets/images/luxery1.jpeg" alt="Living Room"
                onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1400'">
         </div>
+         <div class="swiper-slide">
+          <img src="assets/images/luxery4.jpeg" alt="Living Room"
+               onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1400'">
+        </div>
         <div class="swiper-slide">
           <img src="assets/images/luxery2.jpeg" alt="Kitchen"
+               onerror="this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1400'">
+        </div>
+         <div class="swiper-slide">
+          <img src="assets/images/luxery5.jpeg" alt="Kitchen"
                onerror="this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1400'">
         </div>
         <div class="swiper-slide">
@@ -242,7 +257,6 @@
         </div>
       </div>
     </div>
-    <!-- Floating info card -->
     <div class="gallery-card">
       <span style="font-size:9px;font-weight:700;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px;" id="gcategory">Interior Spaces</span>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.2vw,42px);font-weight:400;color:#fff;line-height:1.15;margin-bottom:14px;" id="gcaption">
@@ -253,13 +267,12 @@
       </p>
     </div>
   </div>
-  <!-- Bottom bar -->
   <div class="gallery-bar">
     <span style="font-size:10px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.35);">
       Olivine Apartments &copy; 2026
     </span>
     <div style="display:flex;align-items:center;gap:20px;">
-      <span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(255,255,255,0.35);" id="gcounter">01 / 04</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(255,255,255,0.35);" id="gcounter">01 / 06</span>
       <button class="gnav-btn" id="gprev">Prev</button>
       <button class="gnav-btn" id="gnext">Next</button>
     </div>
@@ -298,44 +311,56 @@
 <section class="feat-section" id="features">
   <div style="max-width:1280px;margin:0 auto;">
     <span class="feat-eyebrow reveal">Specifications &amp; Standards</span>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:flex-end;margin-bottom:60px;" class="reveal d1">
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:flex-end;margin-bottom:60px;" class="feat-header-grid reveal d1">
       <h2 class="feat-title">The <em>Olivine</em><br>Advantage</h2>
       <p class="feat-side">Beyond aesthetics, we invest in the invisible — the infrastructure that ensures your home functions with absolute precision and comfort.</p>
     </div>
+
     <div class="bgrid">
-      <!-- Wide: Parking -->
       <div class="b-wide reveal">
         <div class="b-circle">
-          <svg viewBox="0 0 24 24"><path stroke-linecap="square" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
         </div>
-        <div style="width:1px;align-self:stretch;background:linear-gradient(transparent,rgba(0,0,0,0.1),transparent);margin:0 4px;"></div>
+        <div class="vertical-line" style="width:1px;align-self:stretch;background:linear-gradient(transparent,rgba(0,0,0,0.1),transparent);margin:0 4px;"></div>
         <div>
           <h3 class="b-name">Ample Parking Space</h3>
           <p class="b-sub">Thoughtfully engineered circulation for effortless arrival. Dedicated bays with luxury spatial standards and resident priority access.</p>
         </div>
       </div>
-      <!-- Dark: CCTV -->
+
       <div class="b-dark reveal d1">
         <div class="b-dicon">
-          <svg viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/><path d="M10 12h.01"/><path d="M14 12h.01"/><path d="M2 10V8a2 2 0 1 1 4 0v2"/><path d="M18 10V8a2 2 0 1 1 4 0v2"/></svg>
         </div>
         <div>
           <h3 class="b-name">Pre-Installed CCTV</h3>
           <p class="b-dsub">Discrete, high-fidelity monitoring across all common areas and entry points.</p>
         </div>
       </div>
-      <!-- Smalls -->
+
       <div class="b-sm reveal">
+        <div style="color:var(--gold); margin-bottom: 20px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="2" y="7" rx="2"/><path d="M22 11v2"/><path d="m7 11 2 2 4-4"/></svg>
+        </div>
         <span class="b-tag">Energy</span>
         <h3 class="b-name">5KW Hybrid Inverter</h3>
         <p class="b-sub">Coupled with 10KWh UPS for seamless transition between power sources.</p>
       </div>
+
       <div class="b-sm reveal d1">
+        <div style="color:var(--gold); margin-bottom: 20px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        </div>
         <span class="b-tag">Resources</span>
         <h3 class="b-name">24/7 Water Supply</h3>
         <p class="b-sub">Integrated purification and heavy-duty storage ensuring constant high-pressure flow.</p>
       </div>
+
       <div class="b-sm reveal d2">
+        <div style="color:var(--gold); margin-bottom: 20px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4h2"/><path d="M4 4h2"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M20 12h2"/><path d="M2 12h2"/><circle cx="12" cy="12" r="3"/><path d="m18 18 1.5 1.5"/><path d="m4.5 4.5 1.5 1.5"/><path d="m18 6 1.5-1.5"/><path d="M4.5 19.5 6 18"/></svg>
+        </div>
         <span class="b-tag">Infrastructure</span>
         <h3 class="b-name">Dedicated Transformer</h3>
         <p class="b-sub">Private power station providing electrical independence and surge protection.</p>
@@ -343,6 +368,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ══════════ INVEST CTA ══════════ -->
 <section class="invest">
@@ -370,26 +396,30 @@
     <div class="loc-sidebar">
       <span class="loc-sidebar-title">Location Highlights</span>
       <ul class="loc-list">
-        <li><span class="n">1.</span> GRA Phase 2</li>
-        <li><span class="n">2.</span> Port Harcourt City Mall</li>
-        <li><span class="n">3.</span> Rumuola Flyover</li>
-        <li><span class="n">4.</span> Trans-Amadi Industrial Layout</li>
-        <li><span class="n">5.</span> Polo Club Port Harcourt</li>
-        <li><span class="n">6.</span> Spar Supermarket</li>
-        <li><span class="n">7.</span> Shell Industrial Area</li>
-        <li><span class="n">8.</span> Bori Camp</li>
-        <li><span class="n">9.</span> Eleme Junction</li>
-        <li><span class="n">10.</span> Pabod Breweries</li>
-        <li><span class="n">11.</span> Bonny Street Market</li>
-        <li><span class="n">12.</span> Rumuokoro Roundabout</li>
+        <li><span class="n">1.</span> <a href="http://googleusercontent.com/map_location_reference/0" target="_blank">GRA Phase 2</a></li>
+        <li><span class="n">2.</span> <a href="http://googleusercontent.com/map_location_reference/2" target="_blank">Port Harcourt City Mall</a></li>
+        <li><span class="n">3.</span> <a href="http://googleusercontent.com/map_location_reference/4" target="_blank">Rumuola Flyover</a></li>
+        <li><span class="n">4.</span> <a href="http://googleusercontent.com/map_location_reference/6" target="_blank">Trans-Amadi Industrial Layout</a></li>
+        <li><span class="n">5.</span> <a href="http://googleusercontent.com/map_location_reference/8" target="_blank">Polo Club Port Harcourt</a></li>
+        <li><span class="n">6.</span> <a href="http://googleusercontent.com/map_location_reference/10" target="_blank">Spar Supermarket</a></li>
+        <li><span class="n">7.</span> <a href="http://googleusercontent.com/map_location_reference/12" target="_blank">Shell Industrial Area</a></li>
+        <li><span class="n">8.</span> <a href="http://googleusercontent.com/map_location_reference/14" target="_blank">Bori Camp</a></li>
+        <li><span class="n">9.</span> <a href="http://googleusercontent.com/map_location_reference/16" target="_blank">Eleme Junction</a></li>
+        <li><span class="n">10.</span> <a href="http://googleusercontent.com/map_location_reference/18" target="_blank">Pabod Breweries</a></li>
+        <li><span class="n">11.</span> <a href="http://googleusercontent.com/map_location_reference/20" target="_blank">Bonny Street Market</a></li>
+        <li><span class="n">12.</span> <a href="http://googleusercontent.com/map_location_reference/22" target="_blank">Rumuokoro Roundabout</a></li>
       </ul>
-      <a href="https://maps.google.com" target="_blank" class="loc-btn">
-        <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <a href="https://www.google.com/maps/search/GRA+Phase+2,+Port+Harcourt+City+Mall,+Rumuola+Flyover,+Trans-Amadi+Industrial+Layout,+Polo+Club,+Spar,+Shell+Industrial+Area,+Bori+Camp,+Eleme+Junction,+Pabod+Breweries,+Bonny+Street+Market,+Rumuokoro+Roundabout+Port+Harcourt" target="_blank" class="loc-btn">
+        <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
         View on Google Maps
       </a>
     </div>
   </div>
 </section>
+
 
 <!-- ══════════ CONTACT ══════════ -->
 <section class="contact-grid" id="contact">
@@ -397,7 +427,7 @@
     <div class="inner">
       <div class="logo-badge reveal" style="margin-bottom:40px;">
         <span class="l1">OLIVINE</span>
-        <span class="l2">WEST</span>
+        <span class="l2">APARTMENTS</span>
       </div>
       <h2 class="reveal d1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(30px,3.2vw,48px);font-weight:300;color:#fff;line-height:1.2;margin-bottom:40px;">
         Start your<br><em>conversation</em>
@@ -425,10 +455,25 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="f-logo">Olivine Apartments</div>
-  <div class="f-txt">© 2026 Landasset Development. All rights reserved.</div>
-  <div class="f-txt">Port Harcourt, Nigeria</div>
+<footer class="bg-stone-950 px-6 py-12 flex flex-col items-center text-center border-t border-white/5">
+    
+    <div class="font-serif text-white text-2xl tracking-[0.25em] uppercase mb-8">
+        Olivine Apartments
+    </div>
+
+    <div class="flex flex-col gap-3">
+        <div class="text-stone-400 text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em]">
+            Port Harcourt, Nigeria
+        </div>
+        
+        <div class="w-8 h-[1px] bg-stone-800 self-center my-1"></div>
+
+        <div class="text-stone-600 text-[9px] sm:text-[10px] uppercase tracking-[0.15em] leading-relaxed">
+            &copy; 2026 Landasset Development.<br class="block sm:hidden"> 
+            All rights reserved.
+        </div>
+    </div>
+
 </footer>
 
 <!-- SCRIPTS -->
@@ -437,9 +482,11 @@
 // Swiper
 const captions = [
   ['Interior Spaces', 'Luxury <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Living Room</em>'],
-  ['Interior Spaces', 'Modern <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Kitchen</em>'],
-  ['Interior Spaces', 'Master <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Bedroom</em>'],
-  ['Architecture', 'Building <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Exterior</em>'],
+  ['Interior Spaces', 'Signature <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Lounge</em>'],
+  ['Culinary Art', 'Modern <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Kitchen</em>'],
+  ['Culinary Art', 'Bespoke <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Kitchen</em>'],
+  ['Restful Haven', 'Master <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Bedroom</em>'],
+  ['Architecture', 'Modern <em style="font-weight:300;font-style:italic;color:rgba(255,255,255,0.6);">Sitting Room</em>'],
 ];
 const swiper = new Swiper('.mySwiper', {
   loop: true, speed: 1200,
